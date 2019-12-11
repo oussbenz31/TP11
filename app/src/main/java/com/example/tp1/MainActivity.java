@@ -6,6 +6,7 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.net.wifi.WifiManager;
+import android.os.Debug;
 import android.provider.AlarmClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -69,5 +70,10 @@ public class MainActivity extends AppCompatActivity {
         alarmManager.setRepeating(AlarmManager.RTC ,timeInMillis, AlarmManager.INTERVAL_DAY,pendingIntent);
         Toast.makeText(this ,"Alarm set !", Toast.LENGTH_SHORT).show();
 
+    }
+
+    public void runy()
+    {
+        int i = 1;
     }
 }
